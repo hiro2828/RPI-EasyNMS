@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<body>
+<h1>NTT Electronics Stats Collector Demo</h1>
+<p></p>
+
+<h2>Start Collecting MDI</h2>
+
+<form action="./do_stajar.php" method="get">
+	<input type="submit" value="Start Collection">
+</form>
+
+<h2>Stop Collecting MDI</h2>
+
+<form action="./do_stojar.php" method="get">
+	<input type="submit" value="Stop Collection">
+</form>
+
+<p></p>
+<h2>Show Stats</h1>
+<form action="./data/do_showmdi.php" method="get">
+	<input type="submit" value="Show MDI">
+</form>
+<p>Show MDI</p>
+
+<p></p>
+<h2>Show MDI Graph</h1>
+<form action="./data/do_plotmdi-df.php" method="get">
+	<input type="submit" value="Show MDI Delay">
+</form>
+
+<form action="./data/do_plotmdi-ml.php" method="get">
+	<input type="submit" value="Show MDI Loss">
+</form>
+
+</body></html>

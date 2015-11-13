@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
+<body>
+<h1>NTT Electronics MVE5000 WEB API Demo</h1>
+<p></p>
+
+<h2>Status Information</h2> 
+<p>
+(1)	Get Version 	<br>
+(2)	Get Status	<br>
+(3)	Get Output Parameters	<br>
+(4)	Get Preset Number	<br>
+ 
+<form method="GET" action="./getversion.php">
+<input type="text" name="text1">
+<input type="submit" name="btn1" value="select">
+</form>
+</p>
+
+<h2>Preset Selection</h2>
+<p>
+(S)	Sys
+(1)	User 1
+(2)	User 2
+...
+(8)	User 8
+
+<form method="GET" action="./setpreset.php">
+<input type="text" name="text1">
+<input type="submit" name="btn1" value="select">
+</form>
+</p>
+
+<h2>Check Video</h2>
+
+<form action="ffthumb.php" method="get">
+	<input type="submit" value="Show Thumbnail">
+</form>
+<p> This command takes approx 25 sec to display. </p>
+
+
+<p></p>
+<h1>Shutdown RaspberryPI</h1>
+<form action="do_shutdown.php" method="get">
+	<input type="submit" value="Shutdown">
+</form>
+<p> Powered by RaspberryPi </p>
+</body></html>
